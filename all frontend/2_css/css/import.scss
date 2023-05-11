@@ -1,0 +1,9 @@
+@import "reset";
+// 초기화 css를 임포트
+@import "color";
+pre{
+  line-height: 2em;
+  word-spacing: 3px;
+  letter-spacing: -0.03px;
+  color: #333;
+}

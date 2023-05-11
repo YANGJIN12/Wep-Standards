@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css_a</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>A</h1>
+  <pre>
+  - accent-color : 입력 양식에 대한 색상 값을 지정함
+  <h1>성별체크</h1>
+  <input type="checkbox" checked>남자 <input type="radio" checked>여자
+  <input type="range" min="0" max="50">
+  - align-content : 수직 가운데 정렬 
+  
+  <div id="main">
+    <div class="coral"></div>
+    <div class="lightblue"></div>
+    <div class="pink"></div>
+  </div>
+
+  <div class="parent">
+  <div class="child">가운데</div>
+  </div>
+
+  - align-items : 세로 가운데 정렬
+  - vertical-align : 효과가 별로 없음
+  - display : flex에 속함(먼저 선언하고 해야함)
+  - place-content : 라는 속성과 함께 사용할 수 있음
+  <div class="vm"><div>버티컬 얼라인</div></div>
+  <div class="ai"><div>버티컬 얼라인</div></div>
+  
+  - align-self : 하나만 다르게 정렬한다는 의미
+  - all : 요소 또는 요소의 부모에 적용된 속성을 초기값으로 변경함
+  - animation : 아래 설명에 대한 속기 속성
+    - animation-name
+    - animation-duration
+    - animation-timing-function
+    - animation-iteration-count
+    - animation-direction
+    - animation-fill-mode 
+    - animation-play-state : run or off 
+  </pre>
+  
+  <div class="all">
+    <div class="coral">red</div>
+    <div class="lightblue" id="alone">blue</div>
+    <div class="lightgreen">green div with more content</div>
+  </div>
+
+  <div id="ex1">
+    부모
+  </div>
+  <div id="ex2">
+    자식 상속받음
+  </div>
+  <div id="ex3">
+    자식 상속 받지않음
+  </div>
+
+  <div class="rect"></div>
+</body>
+</html>

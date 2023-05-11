@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html, * html {
+  font-size: 16px; /*글자크기*/
+}
+html body, * html body {
+  background-color: rgb(0, 180, 0);
+  color: white;
+  /* 16 * 3 = 48px */
+}
+html body pre, * html body pre {
+  color: yellow;
+}
+html body h1, * html body h1 {
+  font-size: 3rem;
+}
+html header, * html header {
+  background: violet;
+}
+html header span, * html header span {
+  font: size 12px;
+}
+html main, * html main {
+  background: lightblue;
+}
+html footer, * html footer {
+  background: coral;
+}/*# sourceMappingURL=intro.css.map */

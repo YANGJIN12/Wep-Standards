@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>css_de</title>
+</head>
+<body>
+<h1>D</h1>
+<pre>
+direction : 텍스트의 방향을 왼쪽 오른쪽 중에 설정
+<p class="rtl">오른쪽으로 정렬</p>
+ltr[왼쪽],rtl[오른쪽]
+
+display
+inline : 가로형태로 디스플레이를 모아줍니다
+block : 블록형태로 width를 다 차지합니다
+none : 디스플레이를 하지 않습니다
+block과 none에 관계 
+none을 설정했던걸 다른해상도에서 보이게 하려면 block을 설정합니다
+</pre>
+<div class="display">
+
+    <ul class="inline">
+        <li>디스플레이</li>
+        <li>인라인</li>
+    </ul>
+
+    <a href="#" class="block">block</a>
+
+    <div class="none">전 보이지 않아요</div>
+
+
+</div>
+
+
+<h1>E</h1>
+<pre>
+empty-cells : 테이블에서 비워져 있는 칸을 보이느냐 보이지않게 하느냐 입니다
+테두리가 모아지는 효과인 border-collapse는 collapse인 경우 아무런 효과가 없습니다
+</pre>
+<table class="empty-cell">
+    <colgroup>
+    <col style="width:100px;">
+    <col style="width:100px;">
+    <col style="width:100px;">
+    </colgroup>
+<tr>
+    <td>칸</td><td></td><td>칸</td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
