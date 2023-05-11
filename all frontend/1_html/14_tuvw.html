@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html_t,u,v,w</title>
+</head>
+<body>
+  <h1>T</h1>
+  <pre>
+    - table, tbody, td, th, tr, thead, tfoot 
+    - template : 페이지가 로드될 때 숨겨진 일부 컨텐츠를 표시
+    - textarea : 여려줄 입력 컨트롤 장문에 글을 쓰는 텍스트 박스
+    <textarea cols="50" rows="10" resize="none" placeholder="자유롭게 작성"></textarea>
+    - time : 특정시간/날짜 정의 
+    이요소의 속성중 datetime은 시간을 기계가 읽을 수 있는 형식으로 변환하여
+    브라우저 사용자가 켈린더를 통해 날짜 알림을 추가할 수 있음
+    <time datatime="2023-03-23 21:00"></time>
+    - title : html 문서의 제목을 정의
+    - track : 오디오 또는 비디오에 텍스트 트랙을 정의
+    - tt : 지금은 사용하지 않음
+  </pre>
+
+  <h1>U</h1>
+  <pre>
+    - u : 철자가 틀린 단어를 표시
+    - ul : 언오더리스트(숫자가 표시되지 않는 리스트)
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+    </ul>
+  </pre>
+
+  <h1>V</h1>
+  <pre>
+    - var : 일부 텍스트를 변수로 정의
+    - video : 비디오 태그 
+  </pre>
+
+  <h1>W</h1>
+  <pre>
+    - wbr : 긴 텍스트에서 단어를 분리해야할 때 사용
+  </pre>
+  
+  <button onclick="숨긴이미지보이기명령()">숨긴이미지보이기명령</button>
+  <template>
+    <h2>숨겨진 이미지</h2>
+    <img src="img/apple.jpg" alt="">
+  </template>
+  <script>
+  function 숨긴이미지보이기명령(){
+    var 숨긴걸찾기 = document.getElementsByTagName("template")[0];
+      var 복사 = 숨긴걸찾기.content.cloneNode(true)
+      document.body.appendChild(복사)
+    }
+  </script>
+</body>
+</html>

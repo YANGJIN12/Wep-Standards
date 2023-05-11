@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html_o,p,q,r,s</title>
+</head>
+<body>
+  
+  <h1>O</h1>
+  <pre>
+    - object : 이미지나 음악 영상을 링크(지금은 잘 사용하지 않고 video, audio를 더 많이 사용함)
+    <object data="img/apple.jpg"></object>
+    <img src="img/apple.jpg">
+    - ol : 오더리스트(숫자가 들어가는 리스트)
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+    - optgroup : 옵션에서 그룹 별로 분할
+    - option : 옵션
+    <label for="cars">Choose a car</label>
+    <select>
+      <optgroup label="swedish cars">
+        <option>Volvo</option>
+        <option>Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option>Benz</option>
+        <option>BMW</option>
+      </optgroup>
+    </select>
+    - output : 계산된 값을 출력하는 태그
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50"> + 
+    <input type="number" id="b" value="25">  
+    = <output name="x" for="a b"></output>
+    </form> 
+  </pre>
+
+  <h1>P</h1>
+  <pre>
+    - p : 단락(한줄씩 끊어쓰기 위함)
+    - param : 매개변수(요소에 대한 매개변수를 정의하는데 사용됨)
+    <object data="horse.wav">
+    <param name="autoplay" value="ture">
+    </object>
+    - picture : 이미지세트 태그(해상도별로 다른 이미지가 나오는 태그)
+    <picture>
+    <source media="(min-width:650px)" srcset="img/img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="img/img_white_flower.jpg">
+    <source media="(min-width:768px)" srcset="img/img_orange_flowers.jpg">
+    <img src="img/img_orange_flowers.jpg" alt="Flowers" style="width:auto">
+    </picture>
+    - pre : 쓰는 대로 써지는 태그
+    - progress : 게이지
+    <label for="file">Downloading</label>
+    <progress id="file" value="32" max="100">32</progress>
+  </pre>
+  
+  <h1>S</h1>
+  <pre>
+    - s : 더 이상 올바르지 않거나 사라진 내용을 표기하는 태그
+    <p><s>포켓몬빵 50개</s></p>
+    <p>sold out</p>
+    - samp : 컴퓨터 프로그램의 샘플출력을 정의하는데 사용
+    <p>Message from my computer</p>
+    <p><samp>file not found.</samp>press f1 continue</p>
+    (지금 대체된 코드)
+    code(컴퓨터코드로 정의), kbd(키보드 입력으로 정의), var(변수로 정의), pre(쓰는대로 써지는 태그)
+    - script : 자바스크립트로 선언할 때 쓰는 태그(문서에 스크립트를 선언할 때)
+    - section : 문서에 섹션을 정의할 때 사용
+    <section>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Autem doloremque asperiores libero velit deserunt. 
+      Consequatur inventore eligendi molestiae laborum magnam!
+    </section>
+    <section>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Facilis exercitationem voluptas dolorum beatae ex nesciunt natus mollitia et dolores totam?
+    </section>
+    - source : audio, video태그안에 파일이 들어오는 경로를 표시
+    - small : 더 작은 텍스트를 정의
+    <h1>왕뚜껑<small>컵라면</small></h1> => 페런츠 태그를 기준으로 80% 크기
+    - span : 텍스트에서 일부 텍스트 색깔을 바꾸려고할 때 사용
+    <h1>검정 검정 그레이 회색 <span style="color:red">빨강</span></h1>
+    - strong : 문서에 중요한 텍스트를 정의(볼드텍스트)
+    - style : 문서에서 스타일 시트를 선언할 때
+    - sup : 위첨자
+    - sub : 아래첨자
+    <p>위첨자<sup>2</sup>아래첨자<sub>2</sub></p>
+    - summary : 디테일즈에 요약태그
+    <details>
+      <summary>Epcot</summary>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, cum.</p>
+    </details>
+    - svg : 벡터이미지 태그
+    <svg>
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+      <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 8c0-.478-.379-1-1-1h-13c-.62 0-1 .519-1 1v13c0 .621.52 1 1 1h13c.478 0 1-.379 1-1zm-13.5.5h12v12h-12zm-2.5-2.5h13.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-13.75c-.53 0-1 .47-1 1v13.75c0 .414.336.75.75.75s.75-.336.75-.75zm-2.5-2.5h13.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.25c-.53 0-1 .47-1 1v14.25c0 .414.336.75.75.75s.75-.336.75-.75z" fill-rule="nonzero"/></svg>
+    </svg>
+  </pre>
+</body>
+</html>
