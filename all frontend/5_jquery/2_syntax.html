@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <title>jquery Syntax</title>
+</head>
+<body>
+  <h1>Syntax</h1>
+  <pre> 
+  기본구문은 $(선택자)이다 => 정의 엑세스를 하기 위함
+  $(this).hide() => 현재요소를 숨김
+  $("p").hide() => 모든 p요소를 숨김
+  $(".test").hide => 테스트class인 모든 요소를 숨김
+  $("#test").hide => 테스트id인 모든 요소를 숨김
+  </pre>
+  
+  <h1>문서준비 이벤트</h1>
+  <pre>
+  $(document).ready(function(){}) => 문서 로드가 완료(준비)되기 전에 jquery코드가 실행되는 것을 방지하기 위함
+  </pre>
+  
+  <h1>선택기</h1>
+  <pre>
+  $("*") : 모든 엘리먼트 
+  $(this) : 현재 선택된 html엘리먼트
+  $("p.intro") : intro라는 클래스를 가진 p를 선택
+  $("[href]") : href속성이 있는 모든 요소를 선택
+  $(":even") : 모든 짝수요소 선택
+  $(":odd") : 모든 홀수요소 선택
+  홀수 짝수에서 중요한건 0부터 시작함
+  </pre>
+
+  <h1>events</h1>
+  <p>웹페이지에서 응답할 수 있는 모든 방문자의 행동을 이벤트라고함</p>
+  <pre>
+  - mouse events > click, dblclick,mouseenter,mouseleave
+  $("p").click(function(){
+    $(this).hide();
+  })
+  
+  - keyboard events > keypress, keydown,keyup
+  - form events > submit,change,focus,blur
+  - document / window events > load, unload, resize, scroll
+  </pre>
+</body>
+</html>
