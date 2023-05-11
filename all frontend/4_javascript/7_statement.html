@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 문</title>
+</head>
+<body>
+  <h1>Statement</h1>
+  <pre>
+  웹브라우저에 의해 실행되는 명령
+  문 식별자
+  break : 중단 시키는 문(스위치 또는 루프에서 빠져나감)
+  <p id="d1"></p>
+  <script>
+  let bk = ""; // 변수 bk는 비워져있음
+  for (let i=0;i < 5; i++){ // i를 0부터 시작해서 4까지 반복해라
+    if(i==3) break; // i가 3과 같다면 멈춰라
+    bk += "<p>"+ i + "</p>"; // 0,1,2
+  }
+  document.getElementById("d1").innerHTML = bk; // 도큐먼트에서 id'd1'을 찾고 변수 bk를 넣어라 
+  </script>
+  class : 객체에 대한 템플릿 유형
+  <p id="ob"></p>
+  <script>
+  class My{
+    constructor(name){
+      this.myName = name;
+    }
+  }
+  myMy = new My("yang-jin");
+  document.getElementById("ob").innerHTML = "내 이름은 " + myMy.myName + "입니다"
+  </script>
+
+  const : 상수[정보를 저장하는 컨테이너]
+  <p id="car"></p>
+  <script>
+  const car = {type:'pony', model:'two', color:'white'};
+  car.color = 'red';
+  car.owner = '대표님';
+  document.getElementById("car").innerHTML = "차 주인은 " + car.owner + "입니다";
+  </script>
+
+  continue : 코드를 반복하되 지정된 값은 건너뜀
+  continue[점프오버]와 break[점프아웃]문의 차이점
+  <p id="ct"></p>
+  <script>
+  let text = "";
+  for(let i=1; i < 8; i++){ // i를 1부터 7까지 반복
+    if(i === 2 || i === 3) continue; // 2,3을 건너뛰고 다음값 출력
+    text += i + "<br>";
+  }
+  document.getElementById("ct").innerHTML = text;
+  </script>
+  - debugger
+  - do..while
+  - for
+  - for...in
+  - for...of
+  - function
+  - if..else..else if
+  - let
+  - return
+  - switch : 선택사항이 많으면 코드가 지저분해 보이기 때문에 스위치문을 사용하면 간결하게 사용할 수 있음
+  - try...catch...finally
+  - var
+  - while
+  </pre>
+  <input type="text" id="myInput" placeholder="과일 검색">
+  <button onclick="myF()">과일 검색 후 클릭</button>
+  <p id="view"></p>
+  <script>
+  function myF(){
+    let st;
+    let fs = document.getElementById("myInput").value;
+    switch(fs){
+      case "사과":
+        st = "사과는 아침에 먹으면 좋습니다"; 
+        break;
+      case "오렌지":
+        st = "오렌지는 상큼합니다"; 
+        break;
+      case "포도":
+        st = "포도는 맛있습니다"; 
+        break;
+      default: st = "당신은 과일보다 인스턴스식품을 더 좋아합니다";
+    }
+    document.getElementById("view").innerHTML = fs;
+  }
+  </script>
+</body>
+</html>
